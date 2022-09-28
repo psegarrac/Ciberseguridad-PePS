@@ -7,7 +7,7 @@ layout: default
 <a class='presentation' alt='Presentación {{ page.title }}' title='Presentación {{ page.title }}' href="{{ site.baseurl }}{{ pathToPdf | remove: ".md" | replace: "_posts/" , "/assets/presentation/"}}.html"> (Diapositivas <i class="fas fa-desktop"></i>)</a>
 
 {% endif %}
-{% include postNavigation.html %}
+<!-- {% include postNavigation.html %} -->
 {% if page.conToc %}
 <h1>{{ page.title }}</h1>
 {% endif %}
@@ -38,7 +38,7 @@ layout: default
         <div id='content'>
         {{ content }}
         </div>
-        {% include postNavigation.html %}
+        <!-- {% include postNavigation.html %} -->
 <!-- body overlay -->
 <div class="body-blackout"></div>
 
